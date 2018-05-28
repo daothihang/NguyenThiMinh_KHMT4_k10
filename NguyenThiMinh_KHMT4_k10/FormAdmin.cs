@@ -16,5 +16,29 @@ namespace NguyenThiMinh_KHMT4_k10
         {
             InitializeComponent();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+        public int i = 10;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            lbtitle.Left += i;
+            if (lbtitle.Left >= this.Width - lbtitle.Width || lbtitle.Left <= 0)
+                i = -i;
+
+        }
+
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+            //timer1.Start();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

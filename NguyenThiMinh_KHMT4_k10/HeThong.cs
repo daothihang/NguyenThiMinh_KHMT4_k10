@@ -33,10 +33,34 @@ namespace NguyenThiMinh_KHMT4_k10
         {
 
         }
+        public int i = 10;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lb1.Left += i;
+            if (lb1.Left >= this.Width - lb1.Width-420||lb1.Left <= 0+48)
+               i = -i;
 
-        //private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        //{
+        }
 
-        //}
+        private void HeThong_Load(object sender, EventArgs e)
+        {
+           // timer1.Start();
+        }
+
+        
+
+       
+
+        private void toolStripMenuItem3_Click_1(object sender, EventArgs e)
+        {
+            Dangnhap dn = new Dangnhap();
+            dn.Show();
+        }
+
+        private void toolStripMenuItem6_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+        }
     }
 }

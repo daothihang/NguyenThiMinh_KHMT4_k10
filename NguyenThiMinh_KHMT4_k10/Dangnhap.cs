@@ -19,7 +19,9 @@ namespace NguyenThiMinh_KHMT4_k10
         LopBUL myLop = new LopBUL();
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            cboloaitk.DataSource = myCB.LayDsCanBo();
+            cboloaitk.DisplayMember = "LoaiTaiKhoan";
+            cboloaitk.ValueMember = "LoaiTaiKhoan";
         }
         CanBoGiaoVienBUL myCB = new CanBoGiaoVienBUL();
         private void btndnhap_Click(object sender, EventArgs e)
@@ -57,9 +59,7 @@ namespace NguyenThiMinh_KHMT4_k10
 
         private void cboloaitk_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cboloaitk.DataSource = myCB.LayDsCanBo();
-            cboloaitk.DisplayMember = "LoaiTaiKhoan";
-            cboloaitk.ValueMember = "LoaiTaiKhoan";
+           
           
         }
 
