@@ -99,3 +99,6 @@ C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\o
 C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.csproj.CopyComplete
 C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.exe
 C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.pdb
+D:\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\bin\Debug\NguyenThiMinh_KHMT4_k10.exe.config
+D:\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.exe
+D:\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.pdb
