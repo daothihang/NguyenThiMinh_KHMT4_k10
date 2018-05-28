@@ -102,14 +102,6 @@ namespace DAL
             }
             return false;
         }
-        public DataTable ComboBoxCacMonHoc()
-        {
-            DataTable dt = new DataTable();
-            KetNoiCoSoDuLieu.MoKetNoi();
-            String sqlComboBox = string.Format("select from MaMon,SoTiet MonHoc where TenMon");
-            SqlDataAdapter da = new SqlDataAdapter(sqlComboBox, KetNoiCoSoDuLieu.KetNoi);
-            da.Fill(dt);
-            return dt;
-        }
+        
     }
 }

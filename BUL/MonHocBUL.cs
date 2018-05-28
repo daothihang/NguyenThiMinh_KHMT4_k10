@@ -31,11 +31,7 @@ namespace BUL
             return myMonHoc.Xoa(MaMon);
 
         }
-        public DataTable ComboBoxCacMonHoc()
-        {
-            DataTable dt = myMonHoc.ComboBoxCacMonHoc();
-            return dt;
-        }
+        
 
 
     }

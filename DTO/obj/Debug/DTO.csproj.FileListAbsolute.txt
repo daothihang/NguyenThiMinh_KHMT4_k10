@@ -18,3 +18,4 @@ C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DTO\bin\Debug\DTO.pdb
 C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DTO\obj\Debug\DTO.dll
 C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DTO\obj\Debug\DTO.pdb
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DTO\obj\Debug\DTO.csprojAssemblyReference.cache

@@ -107,11 +107,12 @@ namespace NguyenThiMinh_KHMT4_k10
             {
                 dgvMonHoc.DataSource = myMonHoc.LayDanhSachMonHoc();
             }
-            if (cbCacMonHoc.Text != "")
+            if (cbCacMonHoc.Text == cbCacMonHoc.SelectedValue.ToString())
             {
-                MonHocBUL mh = new MonHocBUL();
-                DataTable dt = mh.ComboBoxCacMonHoc();
-                dgvMonHoc.DataSource = dt;
+                string TenMon = cbCacMonHoc.SelectedValue.ToString();
+               dgvMonHoc.DataSource = myMonHoc.LayDanhSachMonHoc();
+        
+
             }
         }
 
