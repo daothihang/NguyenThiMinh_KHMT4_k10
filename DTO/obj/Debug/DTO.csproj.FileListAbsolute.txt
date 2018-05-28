@@ -13,3 +13,8 @@ D:\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\DTO\bin\Debug\DTO.pdb
 D:\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\DTO\obj\Debug\DTO.dll
 D:\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\DTO\obj\Debug\DTO.pdb
 D:\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DTO\bin\Debug\DTO.dll
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DTO\bin\Debug\DTO.pdb
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DTO\obj\Debug\DTO.dll
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DTO\obj\Debug\DTO.pdb

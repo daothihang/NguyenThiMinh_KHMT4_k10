@@ -21,3 +21,12 @@ D:\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\DAL\bin\Debug\DTO.dll
 D:\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\DAL\bin\Debug\DTO.pdb
 D:\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\DAL\obj\Debug\DAL.dll
 D:\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\DAL\obj\Debug\DAL.pdb
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DAL\bin\Debug\DAL.dll
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DAL\bin\Debug\DAL.pdb
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DAL\bin\Debug\DTO.dll
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DAL\bin\Debug\DTO.pdb
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DAL\obj\Debug\DAL.dll
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\DAL\obj\Debug\DAL.pdb
