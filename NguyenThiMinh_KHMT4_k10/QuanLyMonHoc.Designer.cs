@@ -28,27 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyMonHoc));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtbMaMonHoc = new System.Windows.Forms.TextBox();
             this.txtbTenMon = new System.Windows.Forms.TextBox();
             this.txtbSoTiet = new System.Windows.Forms.TextBox();
-            this.cbCacMonHoc = new System.Windows.Forms.ComboBox();
             this.dgvMonHoc = new System.Windows.Forms.DataGridView();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnXem = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
+            this.maMonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenMonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soTietDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monHocBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyHocSinhDataSet2 = new NguyenThiMinh_KHMT4_k10.QuanLyHocSinhDataSet2();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sửaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hủyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monHocTableAdapter = new NguyenThiMinh_KHMT4_k10.QuanLyHocSinhDataSet2TableAdapters.MonHocTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMonHoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monHocBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyHocSinhDataSet2)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 39);
+            this.label1.Location = new System.Drawing.Point(32, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 0;
@@ -57,7 +71,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 90);
+            this.label2.Location = new System.Drawing.Point(32, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 1;
@@ -66,132 +80,188 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(58, 139);
+            this.label3.Location = new System.Drawing.Point(32, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Số tiết";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(61, 183);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Các môn học";
-            // 
             // txtbMaMonHoc
             // 
-            this.txtbMaMonHoc.Location = new System.Drawing.Point(148, 39);
+            this.txtbMaMonHoc.Location = new System.Drawing.Point(35, 50);
             this.txtbMaMonHoc.Name = "txtbMaMonHoc";
             this.txtbMaMonHoc.Size = new System.Drawing.Size(121, 20);
             this.txtbMaMonHoc.TabIndex = 4;
             // 
             // txtbTenMon
             // 
-            this.txtbTenMon.Location = new System.Drawing.Point(148, 83);
+            this.txtbTenMon.Location = new System.Drawing.Point(35, 132);
             this.txtbTenMon.Name = "txtbTenMon";
             this.txtbTenMon.Size = new System.Drawing.Size(121, 20);
             this.txtbTenMon.TabIndex = 5;
             // 
             // txtbSoTiet
             // 
-            this.txtbSoTiet.Location = new System.Drawing.Point(148, 132);
+            this.txtbSoTiet.Location = new System.Drawing.Point(35, 219);
             this.txtbSoTiet.Name = "txtbSoTiet";
             this.txtbSoTiet.Size = new System.Drawing.Size(121, 20);
             this.txtbSoTiet.TabIndex = 6;
             // 
-            // cbCacMonHoc
-            // 
-            this.cbCacMonHoc.FormattingEnabled = true;
-            this.cbCacMonHoc.Location = new System.Drawing.Point(148, 174);
-            this.cbCacMonHoc.Name = "cbCacMonHoc";
-            this.cbCacMonHoc.Size = new System.Drawing.Size(121, 21);
-            this.cbCacMonHoc.TabIndex = 7;
-            // 
             // dgvMonHoc
             // 
+            this.dgvMonHoc.AutoGenerateColumns = false;
+            this.dgvMonHoc.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMonHoc.Location = new System.Drawing.Point(64, 231);
+            this.dgvMonHoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maMonDataGridViewTextBoxColumn,
+            this.tenMonDataGridViewTextBoxColumn,
+            this.soTietDataGridViewTextBoxColumn});
+            this.dgvMonHoc.DataSource = this.monHocBindingSource;
+            this.dgvMonHoc.Location = new System.Drawing.Point(252, 143);
             this.dgvMonHoc.Name = "dgvMonHoc";
-            this.dgvMonHoc.Size = new System.Drawing.Size(384, 162);
+            this.dgvMonHoc.Size = new System.Drawing.Size(341, 168);
             this.dgvMonHoc.TabIndex = 8;
             this.dgvMonHoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMonHoc_CellContentClick);
             // 
-            // btnThem
+            // maMonDataGridViewTextBoxColumn
             // 
-            this.btnThem.Location = new System.Drawing.Point(373, 23);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 9;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.maMonDataGridViewTextBoxColumn.DataPropertyName = "MaMon";
+            this.maMonDataGridViewTextBoxColumn.HeaderText = "MaMon";
+            this.maMonDataGridViewTextBoxColumn.Name = "maMonDataGridViewTextBoxColumn";
             // 
-            // btnSua
+            // tenMonDataGridViewTextBoxColumn
             // 
-            this.btnSua.Location = new System.Drawing.Point(373, 64);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 10;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            this.tenMonDataGridViewTextBoxColumn.DataPropertyName = "TenMon";
+            this.tenMonDataGridViewTextBoxColumn.HeaderText = "TenMon";
+            this.tenMonDataGridViewTextBoxColumn.Name = "tenMonDataGridViewTextBoxColumn";
             // 
-            // btnXoa
+            // soTietDataGridViewTextBoxColumn
             // 
-            this.btnXoa.Location = new System.Drawing.Point(373, 111);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 23);
-            this.btnXoa.TabIndex = 11;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.soTietDataGridViewTextBoxColumn.DataPropertyName = "SoTiet";
+            this.soTietDataGridViewTextBoxColumn.HeaderText = "SoTiet";
+            this.soTietDataGridViewTextBoxColumn.Name = "soTietDataGridViewTextBoxColumn";
             // 
-            // btnXem
+            // monHocBindingSource
             // 
-            this.btnXem.Location = new System.Drawing.Point(373, 152);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(75, 23);
-            this.btnXem.TabIndex = 12;
-            this.btnXem.Text = "Xem";
-            this.btnXem.UseVisualStyleBackColor = true;
-            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
+            this.monHocBindingSource.DataMember = "MonHoc";
+            this.monHocBindingSource.DataSource = this.quanLyHocSinhDataSet2;
             // 
-            // btnHuy
+            // quanLyHocSinhDataSet2
             // 
-            this.btnHuy.Location = new System.Drawing.Point(373, 193);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 23);
-            this.btnHuy.TabIndex = 13;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            this.quanLyHocSinhDataSet2.DataSetName = "QuanLyHocSinhDataSet2";
+            this.quanLyHocSinhDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtbMaMonHoc);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtbTenMon);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtbSoTiet);
+            this.groupBox1.Location = new System.Drawing.Point(12, 33);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(205, 278);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thêmToolStripMenuItem,
+            this.sửaToolStripMenuItem,
+            this.xóaToolStripMenuItem,
+            this.xemToolStripMenuItem,
+            this.hủyToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(624, 30);
+            this.menuStrip1.TabIndex = 15;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // thêmToolStripMenuItem
+            // 
+            this.thêmToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thêmToolStripMenuItem.Margin = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.thêmToolStripMenuItem.Name = "thêmToolStripMenuItem";
+            this.thêmToolStripMenuItem.Size = new System.Drawing.Size(69, 26);
+            this.thêmToolStripMenuItem.Text = "Thêm";
+            this.thêmToolStripMenuItem.Click += new System.EventHandler(this.thêmToolStripMenuItem_Click);
+            // 
+            // sửaToolStripMenuItem
+            // 
+            this.sửaToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sửaToolStripMenuItem.Margin = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.sửaToolStripMenuItem.Name = "sửaToolStripMenuItem";
+            this.sửaToolStripMenuItem.Size = new System.Drawing.Size(54, 26);
+            this.sửaToolStripMenuItem.Text = "Sửa";
+            this.sửaToolStripMenuItem.Click += new System.EventHandler(this.sửaToolStripMenuItem_Click);
+            // 
+            // xóaToolStripMenuItem
+            // 
+            this.xóaToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xóaToolStripMenuItem.Margin = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
+            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.xóaToolStripMenuItem.Text = "Xóa";
+            this.xóaToolStripMenuItem.Click += new System.EventHandler(this.xóaToolStripMenuItem_Click);
+            // 
+            // xemToolStripMenuItem
+            // 
+            this.xemToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xemToolStripMenuItem.Margin = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.xemToolStripMenuItem.Name = "xemToolStripMenuItem";
+            this.xemToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
+            this.xemToolStripMenuItem.Text = "Xem";
+            this.xemToolStripMenuItem.Click += new System.EventHandler(this.xemToolStripMenuItem_Click);
+            // 
+            // hủyToolStripMenuItem
+            // 
+            this.hủyToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hủyToolStripMenuItem.Margin = new System.Windows.Forms.Padding(60, 0, 0, 0);
+            this.hủyToolStripMenuItem.Name = "hủyToolStripMenuItem";
+            this.hủyToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.hủyToolStripMenuItem.Text = "Hủy";
+            this.hủyToolStripMenuItem.Click += new System.EventHandler(this.hủyToolStripMenuItem_Click);
+            // 
+            // monHocTableAdapter
+            // 
+            this.monHocTableAdapter.ClearBeforeFill = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(252, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(341, 104);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // QuanLyMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 405);
-            this.Controls.Add(this.btnHuy);
-            this.Controls.Add(this.btnXem);
-            this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnSua);
-            this.Controls.Add(this.btnThem);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ClientSize = new System.Drawing.Size(624, 311);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvMonHoc);
-            this.Controls.Add(this.cbCacMonHoc);
-            this.Controls.Add(this.txtbSoTiet);
-            this.Controls.Add(this.txtbTenMon);
-            this.Controls.Add(this.txtbMaMonHoc);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "QuanLyMonHoc";
             this.Text = "QuanLyMonHoc";
             this.Load += new System.EventHandler(this.QuanLyMonHoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMonHoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monHocBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyHocSinhDataSet2)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,16 +272,23 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtbMaMonHoc;
         private System.Windows.Forms.TextBox txtbTenMon;
         private System.Windows.Forms.TextBox txtbSoTiet;
-        private System.Windows.Forms.ComboBox cbCacMonHoc;
         private System.Windows.Forms.DataGridView dgvMonHoc;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnXem;
-        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem thêmToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sửaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xóaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xemToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hủyToolStripMenuItem;
+        private QuanLyHocSinhDataSet2 quanLyHocSinhDataSet2;
+        private System.Windows.Forms.BindingSource monHocBindingSource;
+        private QuanLyHocSinhDataSet2TableAdapters.MonHocTableAdapter monHocTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maMonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenMonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soTietDataGridViewTextBoxColumn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

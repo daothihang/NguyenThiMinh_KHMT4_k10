@@ -130,4 +130,9 @@ C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\De
 C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.csproj.CopyComplete
 C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.exe
 C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.pdb
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.HoSoHocSinh.resources
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.CanBoGiaoVien.resources
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.XemHoSoHocSinh.resources
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.Lop.resources
 C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.csprojAssemblyReference.cache
+C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.XemDSMonHoc.resources

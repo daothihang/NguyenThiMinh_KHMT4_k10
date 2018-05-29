@@ -24,33 +24,93 @@ namespace DAL
             while (dr.Read())
             {
                 LopDTO hh = new LopDTO(dr["MaLop"].ToString(), dr["TenLop"].ToString(),
-                    dr["NienKhoa"].ToString(), Convert.ToInt32(dr["SiSo"]), dr["GiaoVienChuNhiem"].ToString());
+                    dr["NienKhoa"].ToString(), Convert.ToInt32(dr["SiSo"]),
+                    dr["GiaoVienChuNhiem"].ToString());
 
                 ds.Add(hh);
+                
             }
 
 
             KetNoiCoSoDuLieu.DongKetNoi();
             return ds;
         }
-       public void insert(){
-           List<LopDTO> ds = new List<LopDTO>();
-           KetNoiCoSoDuLieu.MoKetNoi();
-           string sqlINSERT = 
-               "INSERT INTO Lop VALUES(@ma,@ten,@st)";
-           SqlCommand cmd = new SqlCommand(sqlINSERT, KetNoiCoSoDuLieu.KetNoi);
-           SqlDataReader dr = cmd.ExecuteReader();
+        public bool Them(string MaLop, string TenLop, string NienKhoa,int SiSo,string GiaoVienChuNhiem)
+        {
+            try
+            {
+                List<LopDTO> dsLop = new List<LopDTO>();
+                KetNoiCoSoDuLieu.MoKetNoi();
+                String sqlInsert = "insert into Lop values(@MaLop, @TenLop, @NienKhoa,@SiSo,@GiaoVienChuNhiem)";
+                SqlCommand cmd = new SqlCommand(sqlInsert, KetNoiCoSoDuLieu.KetNoi);
+                cmd.Parameters.AddWithValue("@MaLop", SqlDbType.NVarChar).Value = MaLop;
+                cmd.Parameters.AddWithValue("@TenLop", SqlDbType.NVarChar).Value = TenLop;
+                cmd.Parameters.AddWithValue("@NienKhoa", SqlDbType.NVarChar).Value = NienKhoa;
+                cmd.Parameters.AddWithValue("@SiSo", SqlDbType.Int).Value = SiSo;
+                cmd.Parameters.AddWithValue("@GiaoVienChuNhiem", SqlDbType.NVarChar).Value = GiaoVienChuNhiem;
+                if (cmd.ExecuteNonQuery() > 0)
+                    return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            finally
+            {
+                KetNoiCoSoDuLieu.DongKetNoi();
+            }
+            return false;
+        }
+        public bool Sua(string MaLop, string TenLop, string NienKhoa, int SiSo, string GiaoVienChuNhiem)
+        {
+            try
+            {
+                List<LopDTO> dsLop = new List<LopDTO>();
+                KetNoiCoSoDuLieu.MoKetNoi();
+                String sqlUpdate = "update  Lop set TenLop=@TenLop, NienKhoa=@NienKhoa,SiSo=@SiSo,GiaoVienChuNhiem=@GiaoVienChuNhiem where MaLop=@MaLop";
+                SqlCommand cmd = new SqlCommand(sqlUpdate, KetNoiCoSoDuLieu.KetNoi);
+                cmd.Parameters.AddWithValue("@MaLop", SqlDbType.NVarChar).Value = MaLop;
+                cmd.Parameters.AddWithValue("@TenLop", SqlDbType.NVarChar).Value = TenLop;
+                cmd.Parameters.AddWithValue("@NienKhoa", SqlDbType.NVarChar).Value = NienKhoa;
+                cmd.Parameters.AddWithValue("@SiSo", SqlDbType.Int).Value = SiSo;
+                cmd.Parameters.AddWithValue("@GiaoVienChuNhiem", SqlDbType.NVarChar).Value = GiaoVienChuNhiem;
+                if (cmd.ExecuteNonQuery() > 0)
+                    return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            finally
+            {
+                KetNoiCoSoDuLieu.DongKetNoi();
+            }
+            return false;
+        }
 
-           while (dr.Read())
-           {
-               LopDTO hh1 = new LopDTO(dr["MaLop"].ToString(), dr["TenLop"].ToString(),
-                   dr["NienKhoa"].ToString(), Convert.ToInt32(dr["SiSo"]), dr["GiaoVienChuNhiem"].ToString());
-               ds.Add(hh1);
-           } 
-           //cmd.Parameters.AddWithValue("ma",txtbMonHoc.Text);
-           cmd.ExecuteNonQuery();
-           KetNoiCoSoDuLieu.DongKetNoi();
-            
-       }
+        public bool Xoa(string MaLop)
+        {
+            try
+            {
+                List<LopDTO> dsLop = new List<LopDTO>();
+                KetNoiCoSoDuLieu.MoKetNoi();
+                String sqlDelete = "delete from  Lop  where MaLop=@MaLop";
+                SqlCommand cmd = new SqlCommand(sqlDelete, KetNoiCoSoDuLieu.KetNoi);
+                cmd.Parameters.AddWithValue("@MaLop", SqlDbType.NVarChar).Value = MaLop;
+                if (cmd.ExecuteNonQuery() > 0)
+                    return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            finally
+            {
+                KetNoiCoSoDuLieu.DongKetNoi();
+            }
+            return false;
+        }
+
     }
+    
 }
