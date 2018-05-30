@@ -36,9 +36,6 @@ namespace NguyenThiMinh_KHMT4_k10
             //timer1.Start();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
