@@ -15,6 +15,16 @@ namespace BUL
         {
             return myPhanCongDAL.LayBangPhanCongGiangDay();
         }
-		
+
+
+        public void phanCong(String malop, String mamon, String macbgv, String ngaypc)
+        {
+            myPhanCongDAL.them(malop,mamon,macbgv,ngaypc);
+
+        }
+        public void sua(PhanCongGiangDayDTO dto)
+        {
+            myPhanCongDAL.sua(dto);
+        }
     }
 }

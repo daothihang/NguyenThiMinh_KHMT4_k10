@@ -38,3 +38,14 @@ C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\BUL\obj\Debug\BUL.csproj.CopyC
 C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\BUL\obj\Debug\BUL.dll
 C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\BUL\obj\Debug\BUL.pdb
 C:\Users\Admins\Desktop\NguyenThiMinh_KHMT4_k1012\BUL\obj\Debug\BUL.csprojAssemblyReference.cache
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\obj\Debug\BUL.csprojAssemblyReference.cache
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\obj\Debug\BUL.csproj.CoreCompileInputs.cache
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\obj\Debug\BUL.dll
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\obj\Debug\BUL.pdb
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\bin\Debug\BUL.dll
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\bin\Debug\BUL.pdb
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\bin\Debug\DAL.dll
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\bin\Debug\DTO.dll
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\bin\Debug\DAL.pdb
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\bin\Debug\DTO.pdb
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\BUL\obj\Debug\BUL.csproj.CopyComplete

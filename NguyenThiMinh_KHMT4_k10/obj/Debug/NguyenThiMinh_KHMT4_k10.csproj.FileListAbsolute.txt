@@ -170,3 +170,5 @@ C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\obj
 C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.csproj.CopyComplete
 C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.exe
 C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.pdb
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.PhanCongGiangDay.resources
+C:\Users\Admins\Source\Repos\NguyenThiMinh_KHMT4_k10\NguyenThiMinh_KHMT4_k10\obj\Debug\NguyenThiMinh_KHMT4_k10.FormGiaoVien.resources

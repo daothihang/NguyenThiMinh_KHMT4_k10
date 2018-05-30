@@ -24,18 +24,27 @@ namespace NguyenThiMinh_KHMT4_k10
         public int i = 10;
         private void timer1_Tick(object sender, EventArgs e)
         {
-
-            lbtitle.Left += i;
-            if (lbtitle.Left >= this.Width - lbtitle.Width || lbtitle.Left <= 0)
-                i = -i;
+         
+            lbtitle.Location = new Point(lbtitle.Location.X -i, lbtitle.Location.Y);
+            if (lbtitle.Location.X <= 0 -lbtitle.Width|| lbtitle.Location.X > this.Width)
+            {
+                lbtitle.Location = new Point(lbtitle.Location.X +789+lbtitle.Width, lbtitle.Location.Y);
+            }
+           
 
         }
 
         private void FormAdmin_Load(object sender, EventArgs e)
         {
-            //timer1.Start();
+           // timer1.Start();
+            
         }
 
-       
+        private void toolStripMenuItem19_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PhanCongGiangDay phanCong = new PhanCongGiangDay();
+            phanCong.Show();
+        }
     }
 }

@@ -39,9 +39,9 @@ namespace NguyenThiMinh_KHMT4_k10
                 else
                 {
 
-                    //this.Hide();
-                    //FormMainGiaoVien maingv = new FormMainGiaoVien();
-                    //maingv.Show();
+                    this.Hide();
+                    FormGiaoVien maingv = new FormGiaoVien();
+                    maingv.Show();
 
                 }
 
